@@ -1,0 +1,38 @@
+# Ignore intermediate files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Ignore Visual Studio files
+.vs/
+.vscode/
+*.code-workspace
+
+# Ignore config files
+*.user
+*.userprefs
+*.suo
+*.sdf
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+# Ignore backup and temp files
+*.bak
+*.swp
+
+# Ignore compiled binaries
+*.exe
+*.dll
+
+# Ignore 3rdParty content
+StarterContent/
+__ExternalActors__/
+__ExternalObjects__/
+FirstPerson/
+FirstPersonArms/
+FPWeapon/
+LevelPrototyping/
+MedievalDungeon/
+Medieval_Castle_Environment/
