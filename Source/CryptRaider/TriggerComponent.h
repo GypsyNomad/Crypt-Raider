@@ -7,9 +7,6 @@
 #include "Mover.h"
 #include "TriggerComponent.generated.h"
 
-/**
- * 
- */
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class CRYPTRAIDER_API UTriggerComponent : public UBoxComponent
 {
@@ -19,11 +16,9 @@ public:
 	UTriggerComponent();
 
 protected:
-	// Called when the game starts
 	void BeginPlay() override;
 
-public:	
-	// Called every frame
+public:
 	void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable)

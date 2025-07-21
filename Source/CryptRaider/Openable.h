@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include <chrono>
 
 #include "Openable.generated.h"
 
@@ -14,16 +13,13 @@ class CRYPTRAIDER_API UOpenable : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
+public:
 	UOpenable();
 
 protected:
-	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
+public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	void DoOpen();
@@ -47,6 +43,4 @@ private:
 	UStaticMeshComponent* Rotatable{nullptr};
 	FRotator RotationRemaining{};
 	FRotator RotationTotal{};
-
-	std::chrono::steady_clock::time_point start{};
 };

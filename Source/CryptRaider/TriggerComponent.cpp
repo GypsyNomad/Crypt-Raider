@@ -1,12 +1,8 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-#include <algorithm>
 #include "TriggerComponent.h"
+#include <algorithm>
 
 UTriggerComponent::UTriggerComponent()
 {
-    // Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
@@ -28,7 +24,6 @@ void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAct
     auto* actor = GetAcceptableActor();
     if (actor)
     {
-        // UE_LOG(LogTemp, Warning, TEXT("actor is accepted!"));
         if (IsAcceptedActorMoveable)
         {
             auto newLocation = GetComponentTransform().GetLocation();
@@ -48,7 +43,6 @@ void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAct
     }
     else
     {
-        // UE_LOG(LogTemp, Warning, TEXT("actor is missed!"));
         mover->SetShouldMove(false);
     }
 }
