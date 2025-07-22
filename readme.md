@@ -17,4 +17,5 @@ Unreal Engine 5.5.4 was used.
 
 The following packages were used in the creation of this game:
 
-- Medieval Dungeon (([Fab link](https://www.fab.com/listings/c13bd0dc-ac4d-4595-b284-f81386b2e6ef)))
+- Medieval Dungeon ([Fab link](https://www.fab.com/listings/c13bd0dc-ac4d-4595-b284-f81386b2e6ef))
+- Medieval Street Pack ([Fab link](https://www.fab.com/listings/1ac27c48-88db-4f11-a231-7041b37f88f8))
