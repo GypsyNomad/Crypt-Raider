@@ -60,6 +60,5 @@ void URotatable::DoInteract()
     }
 
     RotationRemaining = RotateSpeed;
-    RotationTotal = FRotator::ZeroRotator;
     IsRotating = true;
 }
